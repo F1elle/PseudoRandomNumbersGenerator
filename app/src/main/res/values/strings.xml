@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PRNG</string>
+    <string name="title">Pseudo random numbers generator</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="number">Amount:</string>
+    <string name="separator">Separator:</string>
+    <string name="allow_reps">Allow repetitions</string>
+    <string name="generate">Generate</string>
+    <string name="clear">Clear</string>
+    <string name="copy">Copy</string>
+</resources>
