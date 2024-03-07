@@ -113,6 +113,11 @@ class PRNGViewModel: ViewModel() {
                     generateActive = false
                 )
             }
+            uiState.number.toInt() > 10000 -> {
+                uiState = uiState.copy(
+                    generateActive = false
+                )
+            }
             uiState.to.toInt() < uiState.from.toInt() -> {
                 uiState = uiState.copy(
                     generateActive = false
