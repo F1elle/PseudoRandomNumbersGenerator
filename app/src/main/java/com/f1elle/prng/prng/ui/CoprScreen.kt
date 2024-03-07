@@ -33,10 +33,10 @@ fun coprScreen(navController: NavController) {
         verticalArrangement = Arrangement.spacedBy(8.dp),
         horizontalAlignment = Alignment.CenterHorizontally){
         item {
-            Text("PRNG by", style = TextStyle(color = Color.White, fontSize = 18.sp))
+            Text("PRNG", style = TextStyle(color = Color.White, fontSize = 18.sp))
         }
         item {
-            Text("Hryhorenko Ivan", style = TextStyle(color = Color.White, fontSize = 18.sp))
+            Text("by Hryhorenko Ivan", style = TextStyle(color = Color.White, fontSize = 18.sp))
         }
         item {
             Text("BSD-21", style = TextStyle(color = Color.White, fontSize = 18.sp))
