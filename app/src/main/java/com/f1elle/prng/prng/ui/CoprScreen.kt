@@ -42,6 +42,9 @@ fun coprScreen(navController: NavController) {
             Text("BSD-21", style = TextStyle(color = Color.White, fontSize = 18.sp))
         }
         item {
+            Text("2024", style = TextStyle(color = Color.White, fontSize = 18.sp))
+        }
+        item {
             Icon(painter = painterResource(id = R.drawable.git),
                 contentDescription = "GitHub repo",
                 tint = Color.White,
