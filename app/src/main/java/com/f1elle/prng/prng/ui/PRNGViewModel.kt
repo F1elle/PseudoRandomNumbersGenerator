@@ -60,9 +60,7 @@ class PRNGViewModel: ViewModel() {
                     uiState = uiState.copy(
                         number = event.value
                     )
-                }else if (event.value[0] != '-' && event.value.contains("-") || event.value.count{it == '-'} > 1){
-                    /*TODO*/
-                }else if (!event.value.contains(" ") && !event.value.contains(",") && !event.value.contains(".")){
+                }else if (!event.value.contains(" ") && !event.value.contains(",") && !event.value.contains(".") && !event.value.contains("-")){
                     uiState = uiState.copy(
                         number = event.value
                     )
