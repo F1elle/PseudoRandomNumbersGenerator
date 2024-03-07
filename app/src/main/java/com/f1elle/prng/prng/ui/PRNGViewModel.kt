@@ -110,6 +110,11 @@ class PRNGViewModel: ViewModel() {
                     generateActive = false
                 )
             }
+            uiState.to == "-" || uiState.from == "-" || uiState.number == "-" -> {
+                uiState = uiState.copy(
+                    generateActive = false
+                )
+            }
             uiState.to.toInt() < uiState.from.toInt() -> {
                 uiState = uiState.copy(
                     generateActive = false
