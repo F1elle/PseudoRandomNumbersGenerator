@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -33,22 +34,24 @@ fun coprScreen(navController: NavController) {
         verticalArrangement = Arrangement.spacedBy(8.dp),
         horizontalAlignment = Alignment.CenterHorizontally){
         item {
-            Text("PRNG", style = TextStyle(color = Color.White, fontSize = 18.sp))
+            Text(stringResource(id = R.string.prng), style = TextStyle(color = Color.White, fontSize = 18.sp))
         }
         item {
-            Text("by Hryhorenko Ivan", style = TextStyle(color = Color.White, fontSize = 18.sp))
+            Text(stringResource(id = R.string.byname), style = TextStyle(color = Color.White, fontSize = 18.sp))
         }
         item {
-            Text("BSD-21", style = TextStyle(color = Color.White, fontSize = 18.sp))
+            Text(stringResource(id = R.string.group), style = TextStyle(color = Color.White, fontSize = 18.sp))
         }
         item {
-            Text("2024", style = TextStyle(color = Color.White, fontSize = 18.sp))
+            Text(stringResource(id = R.string.year), style = TextStyle(color = Color.White, fontSize = 18.sp))
         }
         item {
             Icon(painter = painterResource(id = R.drawable.git),
                 contentDescription = "GitHub repo",
                 tint = Color.White,
-                modifier = Modifier.size(30.dp).clickable { uriHandler.openUri(git)})
+                modifier = Modifier
+                    .size(30.dp)
+                    .clickable { uriHandler.openUri(git) })
         }
     }
 }
